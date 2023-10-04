@@ -9,6 +9,7 @@ import Contact from "./Pages/Contact";
 import NavbarDestop from "./Components/NavbarDestop";
 import Footer from "./Components/Footer";
 import TesNavbar from "./Components/tesNavbar";
+import MainServices from "./Pages/MainServices";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route component={Career} path="/careers" exact />
         <Route component={About} path="/about-us" exact />
         <Route component={Contact} path="/contact" exact />
+        <Route component={MainServices} path="/main-services" exact />
         <Route component={NotFound} path="*" />
       </Switch>
       <Footer />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Box,
   Flex,
@@ -31,8 +31,22 @@ import {
 import { useDisclosure } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { menu } from "../Constants";
+import { useDispatch, useSelector } from "react-redux";
+import lang_types from "../Redux/Reducers/Types/langTypes";
 
 function renderMenuMobile() {
+  const dispatch = useDispatch();
+  const { lang, dataLang } = useSelector((state) => state.lang);
+
+  useEffect(() => {
+    console.log(dataLang);
+    dispatch({
+      type: lang_types.Lang,
+      payload: {
+        lang: "EN",
+      },
+    });
+  }, []);
   return menu.map((menu2, index) => {
     return (
       <AccordionItem key={index}>

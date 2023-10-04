@@ -1,10 +1,10 @@
-import user from "./user";
+import lang from "./lang";
 import { combineReducers } from "redux";
 import { configureStore } from "@reduxjs/toolkit";
 import thunk from "redux-thunk";
 
 const rootReducer = combineReducers({
-  user,
+  lang,
 });
 
 const store = configureStore({

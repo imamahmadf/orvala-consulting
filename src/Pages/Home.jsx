@@ -237,7 +237,7 @@ function Home() {
           py={"20px"}
           mb={"50px"}
         >
-          <Container maxWidth={"1140px"}>
+          <Container maxWidth={"1140px"} py={"60px"}>
             {" "}
             <Text
               color={"white"}
