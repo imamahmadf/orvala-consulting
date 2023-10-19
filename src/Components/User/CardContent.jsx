@@ -12,31 +12,52 @@ import {
   ButtonGroup,
   Stack,
   Image,
+  Spacer,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 
 function CardContent(props) {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
-      <Card>
-        <CardBody>
-          <Image
-            src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-            alt="Green double couch with wooden legs"
-            borderRadius="lg"
-          />
-          <Stack mt="6" spacing="3">
-            <Heading size="md" textAlign={"center"}>
-              {props.data.judul}
-            </Heading>
-          </Stack>
-          <Link>
-            <Button mt={5} w={"100%"} variant="secondary">
-              Read more ...
-            </Button>
-          </Link>
-        </CardBody>
-      </Card>
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000"
+      >
+        <Card>
+          <CardBody minHeight={"300px"}>
+            <Image
+              src={props.data.foto}
+              alt="Green double couch with wooden legs"
+              height="200px"
+              overflow="hiden"
+              objectFit="cover"
+              borderRadius="5px"
+              width={"100%"}
+            />
+
+            <Flex flexDirection={"column"}>
+              <Box>
+                <Heading size="md" mt={"20px"} textAlign={"center"}>
+                  {props.data.judul}
+                </Heading>
+              </Box>
+
+              <Spacer />
+
+              <Button mt={5} mb={0} w={"100%"} variant="secondary">
+                Read more ...
+              </Button>
+            </Flex>
+          </CardBody>
+        </Card>
+      </div>
     </>
   );
 }

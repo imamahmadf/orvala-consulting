@@ -8,18 +8,18 @@ const menu = [
     subMenu: [
       {
         judul: "Main Services",
-        foto: "/Assets/pendaftaran.jpg",
+        foto: "/Assets/main-services.jpg",
         link: "/main-services",
       },
       {
-        judul: "Additional Services",
+        judul: "expo",
         foto: "/Assets/outsource.jpg",
-        link: "/additional-services",
+        link: "/expo",
       },
       {
-        judul: "Market Analysis",
-        foto: "/Assets/analisa.jpg",
-        link: "/market-analysis",
+        judul: "Sectors",
+        foto: "/Assets/sectors.jpg",
+        link: "/sectors",
       },
     ],
   },
@@ -46,26 +46,26 @@ const menu = [
 const artikel = [
   {
     id: 1,
-    judul: "Judul 1",
+    judul: "Russian Economy Surprises to the Upside",
     isi: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
-    foto: "/Assets/analisa.jpg",
+    foto: "/Assets/article/1.png",
     kategori: "",
   },
   {
     id: 2,
-    judul: "Judul 2",
+    judul: "Bilateral Relations Between Indonesia and Russia",
     isi: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
-    foto: "/Assets/analisa.jpg",
+    foto: "/Assets/article/2.jpg",
     kategori: "",
   },
   {
     id: 3,
-    judul: "Judul 2",
+    judul: "Economic Forum In Moscow, Russia 2023",
     isi: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
-    foto: "/Assets/analisa.jpg",
+    foto: "/Assets/article/3.jpg",
     kategori: "",
   },
 ];
@@ -215,7 +215,7 @@ const mainServices = [
   {
     step: "PRE-ENTRY PREPARATION",
     exp: "lorem ipsum",
-    background: "",
+    background: "/Assets/services/1.png",
     content: [
       {
         judul: "1.	Market Research & Analysis (MRA)",
@@ -242,7 +242,7 @@ const mainServices = [
   {
     step: "ENTRY IMPLEMENTATION",
     exp: "lorem ipsum",
-    background: "",
+    background: "/Assets/services/2.png",
     content: [
       {
         judul: "6.	Expo Participation, Market Testing and Entry Support (EMTES)",
@@ -265,7 +265,7 @@ const mainServices = [
   {
     step: "POST-ENTRY MANAGEMENT & GROWTH",
     exp: "lorem ipsum",
-    background: "",
+    background: "/Assets/services/3.png",
     content: [
       {
         judul: "10.	Government and Stakeholders Relations (GSR)",
@@ -282,4 +282,187 @@ const mainServices = [
     ],
   },
 ];
-export { artikel, sosmeds, menu, Partners, proses, whyUs, mainServices };
+
+const value = [
+  {
+    judul: "Team",
+    isi: "We consist of international, multisectoral, and professional members equipped with both theoretical and practical experiences.",
+    icon: "/Assets/value/1.png",
+  },
+  {
+    judul: "Time",
+    isi: "We are committed to delivering results promptly and being there whenever you need us.",
+    icon: "/Assets/value/2.png",
+  },
+  {
+    judul: "Target",
+    isi: "We identify captive market segments, seize attainable markets, and highlight potential market growth.",
+    icon: "/Assets/value/3.png",
+  },
+  {
+    judul: "Trust",
+    isi: "We build and maintain relationships for the long term. We focus on data-driven solutions and result-oriented actions.",
+    icon: "/Assets/value/4.png",
+  },
+  {
+    judul: "Trend",
+    isi: "We stay updated with advanced innovations, technology, and global interests.",
+    icon: "/Assets/value/5.png",
+  },
+];
+
+const sectors = [
+  {
+    judul: "Industry and Technology",
+    background: "/Assets/sectors/1s.png",
+    conten: [
+      {
+        icon: "/Assets/sectors/1i.png",
+        isi: "Energy (Including Oil and Gas)*",
+      },
+      {
+        icon: "/Assets/sectors/2i.png",
+        isi: "Mining and Metallurgy*",
+      },
+      {
+        icon: "/Assets/sectors/3i.png",
+        isi: "Machinery and Manufacturing",
+      },
+      {
+        icon: "/Assets/sectors/4i.png",
+        isi: "Information Technology (IT) & Cryptocurrency",
+      },
+      {
+        icon: "/Assets/sectors/5i.png",
+        isi: "Health",
+      },
+    ],
+  },
+  {
+    judul: "Hospitality and Tourism",
+    background: "/Assets/sectors/2s.png",
+    conten: [
+      {
+        icon: "/Assets/sectors/1h.png",
+        isi: "F&B (Food and Beverage)*",
+      },
+      {
+        icon: "/Assets/sectors/2h.png",
+        isi: "HORECA (Hotel, Restaurant, Catering)*",
+      },
+      {
+        icon: "/Assets/sectors/3h.png",
+        isi: "Tourism*",
+      },
+      {
+        icon: "/Assets/sectors/4h.png",
+        isi: "Spices*",
+      },
+    ],
+  },
+  {
+    judul: "Logistics and Education",
+    background: "/Assets/sectors/3s.png",
+    conten: [
+      {
+        icon: "/Assets/sectors/1l.png",
+        isi: "Education*",
+      },
+      {
+        icon: "/Assets/sectors/2l.png",
+        isi: "Transportation",
+      },
+      {
+        icon: "/Assets/sectors/3l.png",
+        isi: "Logistics",
+      },
+    ],
+  },
+  {
+    judul: "Natural Resources & Defense",
+    background: "/Assets/sectors/4s.png",
+    conten: [
+      {
+        icon: "/Assets/sectors/1n.png",
+        isi: "Education*",
+      },
+      {
+        icon: "/Assets/sectors/2n.png",
+        isi: "Transportation",
+      },
+      {
+        icon: "/Assets/sectors/3n.png",
+        isi: "Logistics",
+      },
+    ],
+  },
+  {
+    judul: "Legal and Financial",
+    background: "/Assets/sectors/5s.png",
+    conten: [
+      {
+        icon: "/Assets/sectors/1f.png",
+        isi: "Legal",
+      },
+      {
+        icon: "/Assets/sectors/2f.png",
+        isi: "Investment and Trading",
+      },
+    ],
+  },
+];
+
+const expo = [
+  {
+    logo: "/Assets/expo/Prodexpo.png",
+    judul: "ProdExpo",
+    tema: "31ST INTERNATIONAL EXHIBITION FOR FOOD, BEVERAGES AND FOOD RAW MATERIALS",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    start: "July 1",
+    end: "October 19, 2023",
+    city: "Moscow",
+    foto: [
+      "/Assets/expo/Prodexpo/1.jpg",
+      "/Assets/expo/Prodexpo/2.jpg",
+      "/Assets/expo/Prodexpo/3.jpeg",
+    ],
+  },
+  {
+    logo: "/Assets/expo/Peterfood.png",
+    judul: "Peterfood",
+    tema: "31ST INTERNATIONAL EXHIBITION FOR FOOD, BEVERAGES AND FOOD RAW MATERIALS",
+    content:
+      "nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    start: "July 4",
+    end: "October 31, 2023",
+    city: "St. Petersburg",
+    foto: [
+      "/Assets/expo/Peterfood/1.jp  g",
+      "/Assets/expo/Peterfood/2.jpeg",
+      "/Assets/expo/Peterfood/3.jpeg",
+    ],
+  },
+];
+
+const photos = [
+  "/Assets/photo/1.jpg",
+  "/Assets/photo/2.jpg",
+  "/Assets/photo/3.JPG",
+  "/Assets/photo/4.JPG",
+  "/Assets/photo/5.jpg",
+  "/Assets/photo/6.jpg",
+];
+export {
+  artikel,
+  sosmeds,
+  menu,
+  Partners,
+  proses,
+  whyUs,
+  mainServices,
+  value,
+  sectors,
+  expo,
+  photos,
+};

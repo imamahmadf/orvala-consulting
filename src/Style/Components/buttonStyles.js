@@ -16,7 +16,7 @@ export const buttonStyles = {
     secondary: (props) => ({
       color: "black",
       borderRadius: "3px",
-      width: "320px",
+
       height: "38px",
       fontSize: "16px",
       fontWeight: "300",

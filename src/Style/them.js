@@ -22,6 +22,7 @@ export const myNewTheme = extendTheme({
     primary: "rgba(255, 214, 0, 1)",
     secondary: "rgba(255, 255, 255, 1)",
     background: "#f4f4f4",
+    dark: "#2A2A2A",
   },
   components: {
     Button,

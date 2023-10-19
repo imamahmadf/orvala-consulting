@@ -12,9 +12,96 @@ import {
   FormControl,
   Button,
   Image,
+  Alert,
+  useToast,
 } from "@chakra-ui/react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import YupPassword from "yup-password";
+import emailjs from "@emailjs/browser";
+import { Link, useHistory } from "react-router-dom";
 
 function Contact() {
+  const toast = useToast();
+  const history = useHistory();
+  YupPassword(Yup);
+  //formik initialization
+  const formik = useFormik({
+    initialValues: {
+      fullName: "",
+      email: "",
+      wa: "",
+      typeService: "",
+      message: "",
+    },
+    validationSchema: Yup.object().shape({
+      fullName: Yup.string().required("can't be empty"),
+      message: Yup.string().required("can't be empty"),
+      typeService: Yup.number("input number").required(
+        "required please input type number"
+      ),
+      wa: Yup.number("input number").required(
+        "required please input type number"
+      ),
+      email: Yup.string()
+        .required("required")
+        .min(2, "To Short")
+        .max(255, "To Long"),
+    }),
+    validateOnChange: false,
+    // onSubmit: (values) => {
+    //   alert(JSON.stringify(values, null, 2));
+    // },
+    onSubmit: async (values) => {
+      console.log(values);
+      const { fullName, email, wa, typeService, message } = values;
+      console.log(fullName);
+      emailjs
+        .send(
+          "service_pmisve7",
+          "template_9w8mex4",
+          {
+            from_name: fullName,
+            to_name: "Imam Ahamd Fahrurazi",
+            from_email: email,
+            to_email: "imamahmadfahrurazi@gmail.com",
+            wa: wa,
+            typeService: typeService,
+            message: message,
+          },
+          "6yDfqM19u9Zcmo7Lg"
+        )
+        .then(
+          () => {
+            toast({
+              title: "Message sent successfully",
+              description:
+                "Thank you. We will get back to you as soon as possible.",
+              status: "success",
+              position: "top",
+              duration: 5000,
+              isClosable: true,
+            });
+
+            setTimeout(() => {
+              history.push("/");
+            }, 2000);
+          },
+          (error) => {
+            console.error(error);
+
+            toast({
+              title: "Message failed to send",
+              description: "something went wrong. Please try again.",
+              status: "eror",
+              position: "top",
+              duration: 9000,
+              isClosable: true,
+            });
+          }
+        );
+    },
+  });
   return (
     <Box backgroundColor={"background"}>
       <Container pt={"120px"} maxW="1140px">
@@ -32,11 +119,22 @@ function Contact() {
                   Full Name
                 </Text>
               </HStack>
-              <Input
-                variant="outline"
-                placeholder="e. g. Albert Wesker"
-                backgroundColor={"white"}
-              />
+              <FormControl>
+                <Input
+                  variant="outline"
+                  placeholder="e. g. Albert Wesker"
+                  backgroundColor={"white"}
+                  onChange={(e) => {
+                    formik.setFieldValue("fullName", e.target.value);
+                  }}
+                />
+                {formik.errors.fullName ? (
+                  <Alert status="error" color="red" text="center">
+                    <i className="fa-solid fa-circle-exclamation"></i>
+                    <Text ms="10px">{formik.errors.fullName}</Text>
+                  </Alert>
+                ) : null}
+              </FormControl>
             </Flex>
             <Flex
               mb={"20px"}
@@ -47,11 +145,23 @@ function Contact() {
                   Email
                 </Text>
               </HStack>
-              <Input
-                variant="outline"
-                placeholder="e. g. your@mail.com"
-                backgroundColor={"white"}
-              />
+              <FormControl>
+                <Input
+                  variant="outline"
+                  placeholder="e. g. your@mail.com"
+                  backgroundColor={"white"}
+                  onChange={(e) => {
+                    console.log(e.target.value);
+                    formik.setFieldValue("email", e.target.value);
+                  }}
+                />{" "}
+                {formik.errors.email ? (
+                  <Alert status="error" color="red" text="center">
+                    <i className="fa-solid fa-circle-exclamation"></i>
+                    <Text ms="10px">{formik.errors.email}</Text>
+                  </Alert>
+                ) : null}
+              </FormControl>
             </Flex>
             <Flex
               mb={"20px"}
@@ -62,11 +172,23 @@ function Contact() {
                   WhatsUp Number
                 </Text>
               </HStack>
-              <Input
-                variant="outline"
-                placeholder="Outline"
-                backgroundColor={"white"}
-              />
+              <FormControl>
+                <Input
+                  type="number"
+                  variant="outline"
+                  placeholder="Phone Number"
+                  backgroundColor={"white"}
+                  onChange={(e) => {
+                    formik.setFieldValue("wa", e.target.value);
+                  }}
+                />{" "}
+                {formik.errors.wa ? (
+                  <Alert status="error" color="red" text="center">
+                    <i className="fa-solid fa-circle-exclamation"></i>
+                    <Text ms="10px">{formik.errors.wa}</Text>
+                  </Alert>
+                ) : null}
+              </FormControl>
             </Flex>
             <Flex
               mb={"20px"}
@@ -78,11 +200,23 @@ function Contact() {
                 </Text>
               </HStack>
               <FormControl>
-                <Select placeholder="Please Select" backgroundColor={"white"}>
-                  <option value="option1">Option 1</option>
-                  <option value="option2">Option 2</option>
-                  <option value="option3">Option 3</option>
+                <Select
+                  placeholder="Please Select"
+                  backgroundColor={"white"}
+                  onChange={(e) => {
+                    formik.setFieldValue("typeService", e.target.value);
+                  }}
+                >
+                  <option value={0}>Option 1</option>
+                  <option value={1}>Option 2</option>
+                  <option value={2}>Option 3</option>
                 </Select>
+                {formik.errors.typeService ? (
+                  <Alert status="error" color="red" text="center">
+                    <i className="fa-solid fa-circle-exclamation"></i>
+                    <Text ms="10px">{formik.errors.typeService}</Text>
+                  </Alert>
+                ) : null}
               </FormControl>
             </Flex>
             <Flex
@@ -99,11 +233,25 @@ function Contact() {
                   <Textarea
                     id="rules"
                     height="180px"
-                    placeholder="add rules"
+                    placeholder="Please fill in detailed information and question(s) in order to receive the most relevant response"
                     backgroundColor={"white"}
+                    onChange={(e) => {
+                      formik.setFieldValue("message", e.target.value);
+                    }}
                   />
-                </FormControl>{" "}
-                <Button w={"100%"} variant="primary" mt={"20px"}>
+                  {formik.errors.message ? (
+                    <Alert status="error" color="red" text="center">
+                      <i className="fa-solid fa-circle-exclamation"></i>
+                      <Text ms="10px">{formik.errors.message}</Text>
+                    </Alert>
+                  ) : null}
+                </FormControl>
+                <Button
+                  w={"100%"}
+                  variant="primary"
+                  mt={"20px"}
+                  onClick={formik.handleSubmit}
+                >
                   Submit
                 </Button>
               </Box>

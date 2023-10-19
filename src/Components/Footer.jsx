@@ -35,7 +35,7 @@ function Footer() {
             <Box mb={"40px"}>
               <Text fontSize={"20px"}>Contact</Text>
               <Flex maxW={"300px"} mt={"15px"}>
-                <i class="fa-solid fa-location-dot"></i>
+                <i className="fa-solid fa-location-dot"></i>
                 <Text ms={"10px"}>
                   Aldeoz Building Lantai 6 Jalan Warung Jati Barat No.39,
                   Kalibata, Pancoran, Jakarta Selatan
@@ -43,13 +43,13 @@ function Footer() {
               </Flex>
               <Flex mt={"10px"}>
                 <Center>
-                  <i class="fa-brands fa-whatsapp"></i>
+                  <i className="fa-brands fa-whatsapp"></i>
                 </Center>
                 <Text ms={"10px"}>+628123456789</Text>
               </Flex>
               <Flex mt={"10px"}>
                 <Center>
-                  <i class="fa-regular fa-envelope"></i>
+                  <i className="fa-regular fa-envelope"></i>
                 </Center>
                 <Text ms={"10px"}>info@orvalaconsulting.com</Text>
               </Flex>
